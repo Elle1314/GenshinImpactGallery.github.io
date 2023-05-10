@@ -1,0 +1,108 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url(../src/landscape.jpg);
+	background-position: center;
+	min-height: 100vh;
+	width: 100%;
+	background-size: cover;
+	position: relative;
+}
+
+nav{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav img{
+	width: 200px;
+}
+
+.navi-links{
+	flex: 1;
+	text-align: right;
+}
+
+.navi-links ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+
+.navi-links ul li a{
+	color: #CAE9FF;
+	text-decoration: underline overline;
+}
+
+.navi-links ul li:: after{
+	content: '';
+	width:0%;
+	height:2px;
+	background: #89CFFF;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.navi-links ul li: hover::after{
+	width: 100%;
+}
+
+
+form{
+	height: 320px;
+}
+
+fieldset{
+	font-family: serif, arial;
+	width: 350px;
+	float: right;
+	position: relative;
+	left: -550px;
+}
+
+nav ul li a{
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+ul a:hover{
+	background-color: brown;
+	color: white;
+}
+
+ul a.active{
+	background-color: green;
+	color: white;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
